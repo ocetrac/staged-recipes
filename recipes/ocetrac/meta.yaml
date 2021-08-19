@@ -8,7 +8,7 @@ package:
 source:
   fn: ocetrac-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e9f032ca20ac81f5423c8f6fe1d6b969b675a5762068d9aa44a731416fd5da43
+  sha256: 1f8dd140581781fa0ed77bc462020e65afc9e544de0e203f937aa35857596b7c
   
 build:
   noarch: python
@@ -34,7 +34,6 @@ test:
     - pip check
   imports:
     - ocetrac
-    - ocetrac.model
 
 about:
   home: https://github.com/ocetrac/ocetrac
